@@ -31,4 +31,5 @@ fi
 echo "Restart postgres"
 /etc/init.d/postgresql restart
 
-echo "Done. Please execute ./configure_slave on the SLAVE server.""
+echo "Done. Please execute ./configure_slave on the SLAVE server."
+
