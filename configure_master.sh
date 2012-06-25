@@ -14,10 +14,10 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Configure WAL archiving to slave"
-./enable_wal_archiving ${slave_ip}
+./enable_wal_archiving.sh ${slave_ip}
 
 echo "Perform base backup to slave"
-./base_backup ${slave_ip}
+./base_backup.sh ${slave_ip}
 
 echo "Allow slave server to connect to postgres"
 replace_pgconf_setting listen_addresses "'${master_ip}, localhost'"
